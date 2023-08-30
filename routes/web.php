@@ -31,6 +31,8 @@ Route::get('/mahasiswa/it/rasyid', function(){
 }
 );
 
+Route::resource('/posts', \App\Http\Controllers\PostController::class);
+
 // Route::get('/mahasiswa', function(){
 //     return view('mahasiswa', [
 //         "mahasiswa01" => "Risa Lestari",
